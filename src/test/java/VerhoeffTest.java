@@ -47,4 +47,10 @@ public class VerhoeffTest {
 		assertEquals(false, 
 				verhoeff.validateVerhoeff("49911865246"));
 	}
+	@Test
+	public void testAdharLenGreaterThan12() {
+		assertEquals(false, 
+				verhoeff.validateVerhoeff("4991186652466"));
+	}
+	
 }
