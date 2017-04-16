@@ -14,11 +14,7 @@ public class VerhoeffTest {
 	private String expectedOutput;
 	private Verhoeff verhoeff;
 	
-//	public VerhoeffTest(String input, String expectedOutput) {
-//		this.input = input;
-//		this.expectedOutput = expectedOutput;
-//	}	
-	
+
 	@Before
 	public void before() {
 		verhoeff = new Verhoeff();
@@ -47,6 +43,7 @@ public class VerhoeffTest {
 		assertEquals(false, 
 				verhoeff.validateVerhoeff("49911865246"));
 	}
+	/*Adhar number with more than 12 digits*/
 	@Test
 	public void testAdharLenGreaterThan12() {
 		assertEquals(false, 
